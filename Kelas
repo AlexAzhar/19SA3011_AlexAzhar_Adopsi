@@ -1,0 +1,49 @@
+Kelas :
+-Kelas Device
+-Kelas Transaksi
+-Kelas Pemberi
+-Kelas Penerima 
+-Kelas Operator
+========================================================================================
+Objek 
+-Kelas Device
+  Device_001 (001, kucing_persia, cimeng)
+  Device_002 (002, Kucing_anggora, bleki)
+  Device_007 (005, Anjing_Buldog, roger)
+  Device_008 (006, Anjing_Cihuahua, blek)
+  
+-Kelas Pemberi
+  Pemberi (L001, Ahmad_Suherman, Patikraja)
+  Pemberi (L002, Susilo_Junedi, Purwokerto)
+  
+-Kelas penerima
+  Penerima (N001, Joko, Purwokerto)
+  Penerima (N002, Selamet, Ajibarang)
+  
+-Kelas Transaksi
+  Transaksi (T001, L001, 005, N001)
+  Transaksi (T001, N002, 001, N001)
+===========================================================================================
+Atribut
+-Kelas Device
+  IDdevice (char)primary key
+  Jenis_hewan (char)
+  Nama_hewan (char)
+  
+-Kelas Pemberi
+  IDpemberi (varchar)primary key
+  Nama_Pemberi (char)
+  Alamat_Pemberi (varchar)
+  
+-Kelas Penerima
+  IDpenerima (varchar)primary key
+  Nama_penerima (char)
+  Alamat_Penerima (varchar)
+  
+-Kelas Transaksi
+  IDtransaksi (varchar)primary key
+  IDpemberi (varchar)
+  IDdevice (char)
+  Idpenerima (varchar)
+===========================================================================================
+Metode
